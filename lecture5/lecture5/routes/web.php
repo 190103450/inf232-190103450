@@ -25,8 +25,8 @@ Route::get('/user/{name}/{age}', function ($name,$age) {
 Route::get('/hello', function () {
     return view('zhuldyz');
 })->name('hello');
-Route::get('/name/{name?}', function ($n="Zhuldyz") {
-    return "Hello, ".$n."! Nice to meet you!";
+Route::get('/name/{name?}', function ($name="Zhuldyz") {
+    return "Hello, ".$name."! Nice to meet you!";
 })->name('hello');
 Route::get('/hello', function () {
     return view('zhuldyz');
