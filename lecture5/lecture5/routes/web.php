@@ -21,7 +21,6 @@ Route::get('/user/{name}/{age}', function ($name,$age) {
     return view("/test",compact('name','age'));
 });
 
-Route::get('/student/{number1}/{sign}/{number2}','CalculatorController@operation');
 
 Route::get('/hello', function () {
     return view('zhuldyz');
